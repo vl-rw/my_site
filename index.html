@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+<style>
+    #body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        text-align: center;
+    }
+    #basis {
+        position: absolute;
+        background-image: url(images/Custom-Suit-Wide-Lapel-Suit-and-White-Collar-White-Cuff-Blue-Stripe-Shirt-e1578673711175.jpg);
+        background-size: cover;
+        filter: saturate(0.01);
+        height: 110%;
+        width: 110%;
+        margin: 0;
+        z-index: -1;
+        transition-duration: 0.3s;
+    }
+    #loading {
+        position: absolute;
+        background-image: url(images/loading.gif);
+        background-size: cover;
+        height: 90%;
+        width: 90%;
+        margin: 0;
+        z-index: -2;
+        transition-duration: 0.3s;
+    }
+    #message {
+        position: absolute;
+        background-image: url(images/2413176.jpg);
+        background-size: cover;
+        opacity: 0.9;
+        margin: 5% 25%;
+        width: 40%;
+        height: 60%;
+        border-radius: 5px;
+        padding: 2%;
+        transition-duration: 0.3s;
+    }
+    #copyright {
+        position: absolute;
+        top: 90%;
+        font-size: 75%;
+    }
+    .symbol {
+        height: 16px;
+        width: auto;
+    }
+    a {
+        font-size: 150%;
+        color: black;
+        text-decoration: none;
+        border: 0px black solid;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 5px;
+        margin: 12px;
+        margin-left: 35%;
+        width: 30%;
+        transition-duration: 0.3s;
+        display: block;
+        overflow: hidden;
+    }
+    
+    a:hover {
+        box-shadow: 12px 12px 2px 1px rgba(255, 0, 0, .2);
+        transition-duration: 0.3s;
+    }
+    #back_forward {
+        display: flex;
+
+    }
+    #back_button {
+        display: none;
+        margin-left: 5%;
+        width: 100%;
+        border-radius: 50%;
+        padding: 5%;
+    }
+    #forward_button {
+        display: none;
+        margin-left: 50%;
+        width: 100%;
+        border-radius: 50%;
+        padding: 5%;
+    } 
+    #preload {
+        position: absolute;
+        margin-top: 200vh;
+    }
+    @media only screen and (max-height: 700px) {
+            .symbol {
+                visibility: hidden;
+            }
+    }
+    @media only screen and (max-height: 600px) {
+            #message {
+                height: 100%;
+                width: 80%;
+                margin: 0 10%;
+            }
+    }    
+    @media only screen and (max-width: 600px) {
+            #message {
+                width: 100%;
+                margin: 0;
+            }
+    }
+</style>
+</head>
+<body id="body">
+
+    <div id="loading">
+    </div>
+
+    <div id="basis">
+    </div>
+
+        <div id="message">
+        
+        <h1 id="header" >My site</h1>
+        
+        <p id="description" >Hello there! This is my site. You can find some interesting information here.</p>
+
+        <a href="#" onClick="sex()" id="sex_button"> <img src="images/593986.png" class="symbol"> Evol_Psy</a>    
+        
+        <a href="#" onClick="medicine()" id="medicine_button"> <img src="images/medicine-icon-29795.png" class="symbol"> Medicine</a>  
+        
+        <a href="#" onClick="code()" id="code_button"> <img src="images/6614689.png" class="symbol"> Code</a>
+        
+        <a href="#" onClick="chemistry()" id="chemistry_button"> <img src="images/3223827.png" class="symbol"> Chemistry</a> 
+        
+        <a href="#" onClick="archive()" id="archive_button"> <img src="images/file_archive_icon_193973.png" class="symbol"> Archive</a> 
+          
+        <a href="#" onClick="planet()" id="planet_button"> <img src="images/planet-earth.svg" class="symbol"> Planet</a> 
+        
+        <div id="back_forward">
+            <a href="#" onClick="back()" id="back_button"> «   Back</a> 
+            <a href="#" onClick="" id="forward_button"> Forward   »</a>       
+        
+        </div>
+        <span id="copyright">All rights reversed©. If I owe you something, I forgive you.</span>
+        </div>
+        
+        
+        
+        
+        <div id="preload">
+        
+        
+            <img src="images/Custom-Suit-Wide-Lapel-Suit-and-White-Collar-White-Cuff-Blue-Stripe-Shirt-e1578673711175.jpg" >    
+            <img src="images/2413176.jpg" >    
+        
+            <img src="images/collage.jpg" >    
+            <img src="images/image.png" >    
+    
+            <img src="images/man-woman-casual-clothes-posing_1_25.jpg" >    
+            <img src="images/xv-poe-science-wallpapers-1792156711.jpg" >    
+        
+            <img src="images/code.jpg" >    
+            <img src="images/14011462899_b6b8f3b24a_b.jpg" >    
+        
+            <img src="images/977887.webp" >    
+            <img src="images/chemistry-wallpaper-science-wallpapers-485706662.jpg" >    
+        
+            <img src="images/552869.webp" >    
+            <img src="images/HD-wallpaper-book-books-brown-old-books-old-old-book.jpg" >     
+        
+            <img src="images/3683640.jpg" >    
+            <img src="images/sunset.jpg" >    
+        
+        
+        </div>
+
+<script>
+
+    message.style.visibility = "hidden";
+    basis.style.visibility = "hidden";
+    
+    setTimeout(()=> {
+    
+        message.style.visibility = "visible";
+        basis.style.visibility = "visible";
+       
+    
+    }
+    
+    , 700);
+    
+    setTimeout(()=> {
+    
+        alert("Ссылки пока никуда не ведут. Прикручу их в будущем - а пока работа идет!");
+       
+    
+    }
+    
+    , 1500);
+    
+    function back() {
+    
+        header.textContent = "My site";
+        description.textContent = "Hello there! This is my site. You can find some interesting information here.";
+    
+        basis.style.backgroundImage = "url(images/Custom-Suit-Wide-Lapel-Suit-and-White-Collar-White-Cuff-Blue-Stripe-Shirt-e1578673711175.jpg)";
+        message.style.backgroundImage = "url(images/2413176.jpg)";
+    
+        sex_button.style.display = "block";
+        medicine_button.style.display = "block";
+        code_button.style.display = "block";
+        chemistry_button.style.display = "block";
+        archive_button.style.display = "block";
+        planet_button.style.display = "block";
+        
+        back_button.style.display = "none";
+        forward_button.style.display = "none";
+        message.style.color = "black";
+    
+    
+    };
+    
+    function medicine() {
+    
+        header.textContent = "Medicine";
+        description.textContent = "Here a some medical information.";
+    
+        basis.style.backgroundImage = "url(images/collage.jpg)";
+        message.style.backgroundImage = "url(images/image.png)";  
+    
+        sex_button.style.display = "none";
+        medicine_button.style.display = "none";
+        code_button.style.display = "none";
+        chemistry_button.style.display = "none";
+        archive_button.style.display = "none";
+        planet_button.style.display = "none";
+    
+        back_button.style.display = "block";
+        forward_button.style.display = "block"; 
+        message.style.color = "white";
+                
+        forward_button.href = "google.com";
+        
+    };
+
+    function sex() {
+    
+        header.textContent = "Sex differencies";
+        description.textContent = "There are no adult information. Just articles about evolution psychology and gender differencies.";
+    
+        basis.style.backgroundImage = "url(images/man-woman-casual-clothes-posing_1_25.jpg)";
+        message.style.backgroundImage = "url(images/xv-poe-science-wallpapers-1792156711.jpg)";  
+    
+        sex_button.style.display = "none";
+        medicine_button.style.display = "none";
+        code_button.style.display = "none";
+        chemistry_button.style.display = "none";
+        archive_button.style.display = "none";
+        planet_button.style.display = "none";
+    
+        back_button.style.display = "block";
+        forward_button.style.display = "block";   
+        message.style.color = "white"; 
+        
+        forward_button.href = "google.com";
+
+    };
+
+    function code() {
+    
+        header.textContent = "My coding";
+        description.textContent = "There is some programming and welding information.";
+    
+        basis.style.backgroundImage = "url(images/code.jpg)";
+        message.style.backgroundImage = "url(images/14011462899_b6b8f3b24a_b.jpg)";  
+    
+        sex_button.style.display = "none";
+        medicine_button.style.display = "none";
+        code_button.style.display = "none";
+        chemistry_button.style.display = "none";
+        archive_button.style.display = "none";
+        planet_button.style.display = "none";
+    
+        back_button.style.display = "block";
+        forward_button.style.display = "block"; 
+        message.style.color = "white";
+                
+        forward_button.href = "google.com";
+    };
+
+    
+    function chemistry() {
+    
+        header.textContent = "Chemistry";
+        description.textContent = "Tips and tricks to get a solution of everything.";
+    
+        basis.style.backgroundImage = "url(images/977887.webp)";
+        message.style.backgroundImage = "url(images/chemistry-wallpaper-science-wallpapers-485706662.jpg)";  
+    
+        sex_button.style.display = "none";
+        medicine_button.style.display = "none";
+        code_button.style.display = "none";
+        chemistry_button.style.display = "none";
+        archive_button.style.display = "none";
+        planet_button.style.display = "none";
+    
+        back_button.style.display = "block";
+        forward_button.style.display = "block"; 
+        message.style.color = "white";
+                
+        forward_button.href = "google.com";
+    };
+    
+    function archive() {
+    
+        header.textContent = "Archive";
+        description.textContent = "Some files I want to save for the future.";
+    
+        basis.style.backgroundImage = "url(images/552869.webp)";
+        message.style.backgroundImage = "url(images/HD-wallpaper-book-books-brown-old-books-old-old-book.jpg)";  
+    
+        sex_button.style.display = "none";
+        medicine_button.style.display = "none";
+        code_button.style.display = "none";
+        chemistry_button.style.display = "none";
+        archive_button.style.display = "none";
+        planet_button.style.display = "none";
+    
+        back_button.style.display = "block";
+        forward_button.style.display = "block"; 
+        message.style.color = "white";
+                
+        forward_button.href = "google.com";
+    };
+    
+    function planet() {
+    
+        header.textContent = "Virtual Planet";
+        description.textContent = "I uesd modern mars which was water filled and had atmosphere as a base for some game-like models.";
+    
+        basis.style.backgroundImage = "url(images/3683640.jpg)";
+        message.style.backgroundImage = "url(images/sunset.jpg)";  
+    
+        sex_button.style.display = "none";
+        medicine_button.style.display = "none";
+        code_button.style.display = "none";
+        chemistry_button.style.display = "none";
+        archive_button.style.display = "none";
+        planet_button.style.display = "none";
+    
+        back_button.style.display = "block";
+        forward_button.style.display = "block"; 
+        message.style.color = "white";
+                
+        forward_button.href = "google.com";
+    };
+
+</script>
+
+</body>
+</html>
