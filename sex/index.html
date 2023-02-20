@@ -6,54 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tasty links</title>
 <link rel="stylesheet" href="style.css">
-<style>
-
-</style>
 </head>
 <body>
     
     
-      <header id='head'>
+	<header id='head'>
 			Inspired by Rollo Tomassi, the Godfather of the Manosphere.
-      </header>
+	</header>
       
 
-         <section id='section'>
+	<section id='section'></section>
+	
+	<h2>All archive is temporarily <a href="https://mega.nz/folder/WdwgQQrQ#s3cLVicyfN014Nw_YtS98g">there</a></h2>
             
-</section>
 
-
-
-      
-      -->
-      
-		<script src="object.json"></script>
-      <script>
+	<script src="object.json"></script>
+	
+	<script>
 		  "use strict";
 
-
-	  		 
 	  		function start() {
-	  		 
-            	const load = document.createElement('img');
-            	load.src = '7U06-unscreen.gif';
-            	load.id = 'preloader';
-            	
-            	section.appendChild(load);
 
-            	
-	  		 };
-	  		 
-	  		 
-	  		 
-	  		 
+				const load = document.createElement('img');
+				load.src = '7U06-unscreen.gif';
+				load.id = 'preloader';
 
-				setTimeout(sortData, 3000, object);
-				start();
+				section.appendChild(load);
+            	
+	  		};
+	  		 
+			setTimeout(sortData, 3000, object);
+			start();
 	  		 
 	  		function sortData(object) {
-	  		 	
-				
 
 				for (let any=0 ; any < object.length ; any++ ) {
 	  		 	
@@ -74,8 +59,7 @@
 	  		 		const lin4 = document.createElement('a');
 	  		 		const lin5 = document.createElement('a');
 	  		 		
-	  		 		
-	  		 		
+
 	  		 		Article.classList.add('article');
 	  		 		
 	  		 		img.src = object[any].image;
@@ -117,7 +101,6 @@
 	  		 		defence.textContent = "• " + object[any].quote3;
 
 	  		 		
-	  		 		
 	  		 		defence.classList.add('quote');
 	  		 		let defence2 = null;
 	  		 		if (object[any].quote4) {
@@ -148,8 +131,6 @@
 	  		 		lin4.classList.add('link');
 	  		 		lin5.classList.add('link');
 	  		 		
-	  		 		
-	  		 		
 	  		 	
 	  		 		Article.appendChild(articleHeader);
 
@@ -179,15 +160,9 @@
 	  		 	}
 	  		 	
 	  		 	preloader.remove();
-	  		 
-	  		 
+				
 	  		};
-	  		
-			
-			   
-			  
-      
-      
+
       </script>
 </body>
 </html>
