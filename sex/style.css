@@ -86,14 +86,14 @@ Article {
     overflow-y: visible;
     box-shadow: 120px 120px 20px 10px #1f2328;
   };
-@media only screen and (max-height: 800px) {
+@media only screen and (max-width: 800px) {
         section {
             grid-template-columns:  repeat(6, minmax(0, 1fr));
             padding:  60px 60px;
         }
 }
 
-@media only screen and (max-height: 450px) {
+@media only screen and (max-width: 450px) {
         section {
             grid-template-columns:  repeat(3, minmax(0, 1fr));
             padding:  60px 60px;
