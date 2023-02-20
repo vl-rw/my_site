@@ -75,7 +75,7 @@ Article {
     overflow: hidden;
     transition-duration: 1000ms;
 }
-  Article:hover {
+Article:hover {
     margin-top: 10px;
     transform: scale(2);
     border: 2px #f68703 solid;
@@ -85,17 +85,23 @@ Article {
     transition-duration: 1000ms;
     overflow-y: visible;
     box-shadow: 120px 120px 20px 10px #1f2328;
-  };
-@media only screen and (max-width: 800px) {
+}
+@media only screen and (max-width: 850px) {
         section {
             grid-template-columns:  repeat(6, minmax(0, 1fr));
+            padding:  60px 60px;
+        }
+}
+@media only screen and (max-width: 650px) {
+        section {
+            grid-template-columns:  repeat(4, minmax(0, 1fr));
             padding:  60px 60px;
         }
 }
 
 @media only screen and (max-width: 450px) {
         section {
-            grid-template-columns:  repeat(3, minmax(0, 1fr));
+            grid-template-columns:  repeat(2, minmax(0, 1fr));
             padding:  60px 60px;
         }
 }
