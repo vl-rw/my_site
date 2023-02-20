@@ -2,9 +2,7 @@ body {
     background-color: #454e58;/*#262b2f;*/
     margin: 0;
     padding: 0;
-   }
-
-
+}
 @font-face {
     font-family: 'nervousregular';
     src: url('nervous-webfont.woff2') format('woff2'),
@@ -13,10 +11,9 @@ body {
     font-style: normal;
 
 }
-
 header {
     color:  #f68703;
-    background-color: #1f2328;/*rgba(0, 0, 0, .8);*/
+    background-color: #1f2328;
     margin: 0 ;
     padding: 10px;
     font-family: 'nervousregular';
@@ -39,7 +36,7 @@ article {
     border: 1px #1f2328 solid;
     border-radius: 5px;
     margin: 2%;
-    background: white;/*#bdc3cb;*/
+    background: white;
     height: 50%;
 }
 .name {
@@ -53,7 +50,7 @@ article {
 }
 .unimportant {
     margin-left: 10%;
-    color: #6d7c8c;/*grey;*/
+    color: #6d7c8c;
     font-size: 6px;
 }
 .description {
@@ -89,20 +86,17 @@ Article {
     overflow-y: visible;
     box-shadow: 120px 120px 20px 10px #1f2328;
   };
-  /*
-  Article:hover .hover-element {
-    display:block;
-    margin: 10px;
-    margin-left: 25%;
-    border: 2px red solid;
-    border-radius: 10px;
-    overflow: hidden;
-    /*box-shadow: 10px 5px 5px red;*/
-    /*transform: scale(1.5);* /
-    transition-duration: 1000ms;
-    box-shadow: 120px 120px 20px 10px rgba(0, 0, 0, .8);
-  }
-  .hover-element:hover {
-    visibility: visible;
-  }
-  */
+@media only screen and (max-height: 800px) {
+        section {
+            grid-template-columns:  repeat(6, minmax(0, 1fr));
+            padding:  60px 60px;
+        }
+}
+
+@media only screen and (max-height: 450px) {
+        section {
+            grid-template-columns:  repeat(3, minmax(0, 1fr));
+            padding:  60px 60px;
+        }
+}
+
