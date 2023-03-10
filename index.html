@@ -134,7 +134,9 @@
         
         <a href="#" onClick="chemistry()" id="chemistry_button"> <img src="images/3223827.png" class="symbol"> Chemistry</a> 
         
-        <a href="#" onClick="archive()" id="archive_button"> <img src="images/file_archive_icon_193973.png" class="symbol"> Archive</a> 
+        <a href="#" onClick="archive()" id="archive_button"> <img src="images/file_archive_icon_193973.png" class="symbol"> Archive</a>
+        
+        <a href="#" onClick="politics()" id="politics_button"> <img src="images/390px-Government_icon_(black).svg.png" class="symbol"> Politics</a> 
           
         <a href="#" onClick="planet()" id="planet_button"> <img src="images/planet-earth.svg" class="symbol"> Planet</a> 
         
@@ -173,7 +175,10 @@
             <img src="images/3683640.jpg" >    
             <img src="images/sunset.jpg" >    
         
-        
+            <img src="images/stock-chart-rising-upward.jpg" >    
+            <img src="images/shutterstock_1341801449.jpg" >   
+            
+            
         </div>
 
 <script>
@@ -215,6 +220,7 @@
         chemistry_button.style.display = "block";
         archive_button.style.display = "block";
         planet_button.style.display = "block";
+        politics_button.style.display = "block";
         
         back_button.style.display = "none";
         forward_button.style.display = "none";
@@ -237,6 +243,7 @@
         chemistry_button.style.display = "none";
         archive_button.style.display = "none";
         planet_button.style.display = "none";
+        politics_button.style.display = "none";
     
         back_button.style.display = "block";
         forward_button.style.display = "block"; 
@@ -260,6 +267,7 @@
         chemistry_button.style.display = "none";
         archive_button.style.display = "none";
         planet_button.style.display = "none";
+        politics_button.style.display = "none";
     
         back_button.style.display = "block";
         forward_button.style.display = "block";   
@@ -283,6 +291,7 @@
         chemistry_button.style.display = "none";
         archive_button.style.display = "none";
         planet_button.style.display = "none";
+        politics_button.style.display = "none";
     
         back_button.style.display = "block";
         forward_button.style.display = "block"; 
@@ -306,6 +315,7 @@
         chemistry_button.style.display = "none";
         archive_button.style.display = "none";
         planet_button.style.display = "none";
+        politics_button.style.display = "none";
     
         back_button.style.display = "block";
         forward_button.style.display = "block"; 
@@ -328,6 +338,7 @@
         chemistry_button.style.display = "none";
         archive_button.style.display = "none";
         planet_button.style.display = "none";
+        politics_button.style.display = "none";
     
         back_button.style.display = "block";
         forward_button.style.display = "block"; 
@@ -350,12 +361,36 @@
         chemistry_button.style.display = "none";
         archive_button.style.display = "none";
         planet_button.style.display = "none";
+        politics_button.style.display = "none";
     
         back_button.style.display = "block";
         forward_button.style.display = "block"; 
         message.style.color = "white";
                 
         forward_button.href = "google.com";
+    };
+    
+    function politics() {
+    
+        header.textContent = "Just politics memes";
+        description.textContent = "Simple gallery to laugh and think about.";
+    
+        basis.style.backgroundImage = "url(shutterstock_1341801449.jpg)";
+        message.style.backgroundImage = "url(images/stock-chart-rising-upward.jpg)";  
+    
+        sex_button.style.display = "none";
+        medicine_button.style.display = "none";
+        code_button.style.display = "none";
+        chemistry_button.style.display = "none";
+        archive_button.style.display = "none";
+        planet_button.style.display = "none";
+        politics_button.style.display = "none";
+    
+        back_button.style.display = "block";
+        forward_button.style.display = "block"; 
+        message.style.color = "white";
+                
+        forward_button.href = "./politics/index.html";
     };
 
 </script>
