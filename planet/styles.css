@@ -80,3 +80,8 @@ position: absolute;
 margin-top: 5%;
 margin-left: -2%;
 } 
+.orbital_map {
+width: 20%; 
+height: 20%; 
+margin-left: 80%;
+}
