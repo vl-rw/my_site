@@ -1,2 +1,5 @@
 # This is my site
-## I added some links, but they don't lead anywhere
+
+Here iss my site, where I want to share something I found interesting.
+
+## Not all lins are lead to smth. You were warned.
