@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Test page</title>
+    <style>
+      p {
+        color: red;
+      }
+      .planet {
+        margin-top: -30%;
+      }
+      .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        overflow: hidden;
+        background-color: black;
+        width: 800px;
+        height: 600px;
+      }
+      #orbit1 {
+        margin-top: 35%;
+      }
+      #orbit2 {
+        position: absolute;
+        margin-top:-42%;
+        margin-left: 7%;
+      }
+      
+      #orbit2 img {
+        width: 900px;
+        height: 900px;
+      }
+      #orbit3 {
+        position: absolute;
+        margin-top:-15%;
+        margin-left: 7%;
+        transform: skew(15deg, 15deg);
+      }
+      #orbit3 img {
+        width: 400px;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body class="container">
+    
+    <div>
+    
+    <div id="orbit1" class="image">
+    
+        <img src="orbit.png" />
+    
+    </div>
+    
+    <div class="image planet">
+    
+        <img src="planet.gif" />
+    
+    </div>
+    
+   
+    
+    <div id="orbit2" class="image">
+    
+        <img src="orbit.png" />
+    
+    </div>
+    
+    <div id="orbit3" class="image">
+    
+        <img src="orbit.png" />
+    
+    </div>
+    
+    
+     </div>
+
+    
+    
+    
+
+    <script>
+    i= 0 ;
+    function rotation() {
+    
+        i++;
+        
+        orbit1.style.transform = `rotate(${i}deg)`;
+    
+        orbit2.style.transform = `rotate(${360-i}deg)`;
+        
+        orbit3.style.transform = `rotate(${2*i}deg)`;
+        
+        if (i == 360) i = 0;
+        
+        setTimeout(() => rotation(), 30)
+    
+    };
+    
+    rotation();
+    </script>
+    
+    
+    
+  </body>
+</html>
